@@ -1,6 +1,6 @@
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%#= notice %></p>-->
 
-<h1>Links</h1>
+<h1>Listing Links</h1>
 
 <table>
   <thead>
@@ -16,7 +16,7 @@
       <tr>
         <td><%= link.title %></td>
         <td><%= link.url %></td>
-        <td><%= link_to 'Show', link %></td>U
+        <td><%= link_to 'Show', link %></td>
         <% if link.user == current_user %>
           <td><%= link_to 'Edit', edit_link_path(link) %></td>
           <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
